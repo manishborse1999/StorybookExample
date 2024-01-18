@@ -1,0 +1,56 @@
+/* Header.module.css */
+/* .header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+} */
+
+.header {
+    /* Header styles */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+h1 {
+    /* Heading styles */
+    margin: 0;
+}
+
+.buttonContainer {
+    display: flex;
+}
+
+.primary {
+    /* Styles specific to the primary button */
+    background-color: #3498db;
+    color: rgb(255, 255, 255)
+}
+
+.secondary {
+    /* Styles specific to the secondary button */
+    background-color: #2ecc71;
+    color: rgb(255, 255, 255)
+}
+
+.error {
+    background-color: rgb(211, 47, 47);
+    color: rgb(255, 255, 255)
+}
+
+.transparent {
+    background-color: transparent;
+    color: inherit
+}
+
+.warning {
+    background-color: rgb(237, 108, 2)
+}
+
+.button:hover {
+    background-color: #2980b9;
+}

@@ -1,0 +1,26 @@
+/* Button.module.css */
+.button {
+    /* Shared styles for both primary and secondary buttons */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.primaryButton {
+    /* Styles specific to the primary button */
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+.secondaryButton {
+    /* Styles specific to the secondary button */
+    background-color: #2ecc71;
+    color: #ffffff;
+}
+
+.transparent {
+    background-color: transparent;
+    color: inherit;
+}

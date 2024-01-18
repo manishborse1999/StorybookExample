@@ -1,0 +1,38 @@
+/* Card.module.css */
+.card {
+    /* Card container styles */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.cardImage {
+    /* Image styles */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cardContent {
+    /* Content container styles */
+    padding: 16px;
+}
+
+.cardTitle {
+    /* Title styles */
+    margin: 0;
+    fontSize: 18px;
+}
+
+.cardDescription {
+    /* Description styles */
+    margin: 8px 0;
+    color: #555;
+}
+
+.alignButton {
+    display: flex;
+    justify-content: space-around;
+}
