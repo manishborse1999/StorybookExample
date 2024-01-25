@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import './Carousel.css'
 
 /**
@@ -33,7 +33,13 @@ export const Carousel = ({ data }) => {
     )
 }
 
-// Carousel.propTypes = {
-//     /** Data for the carousel component */
-//     data: PropTypes.array
-// }
+Carousel.propTypes = {
+    /**
+     * Array Data for the carousel slides
+     */
+    data: PropTypes.array,
+  };
+  
+  Carousel.defaultProps = {
+    data:[]
+  };

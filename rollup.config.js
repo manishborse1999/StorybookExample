@@ -24,6 +24,7 @@ export default [
                 plugins: [],
                 minimize: true,
             }),
+            nodeResolve(),
             babel({
                 exclude: 'node_modules/**',
                 presets: ['@babel/preset-react']
@@ -32,7 +33,6 @@ export default [
                 preventAssignment: true,
             }),
             external(),
-            nodeResolve(),
             terser(),
         ]
     }

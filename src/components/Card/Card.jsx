@@ -1,9 +1,10 @@
 // Card.js
 import React from 'react';
 import styles from './Card.module.css';
+import PropTypes from 'prop-types';
 import { Button } from '../Button/index.jsx';
 
-export const Card = ({ title, imageUrl, description, firstButtonTitle, secondButtonTitle }) => {
+export const Card = ({ title="Card Title", imageUrl, description="Card Description", firstButtonTitle="Learn More", secondButtonTitle="Share" }) => {
     return (
         <div className={styles.card}>
             <img className={styles.cardImage} src={imageUrl} alt={title} />
@@ -18,3 +19,34 @@ export const Card = ({ title, imageUrl, description, firstButtonTitle, secondBut
         </div>
     );
 };
+
+Card.propTypes = {
+    /**
+     * Title of card
+     */
+    title: PropTypes.string,
+    /**
+     * ImageUrl of card
+     */
+    imageUrl: PropTypes.string,
+    /**
+     * Description of card
+     */
+    description: PropTypes.string,
+    /**
+     * firstButtonTitle button title
+     */
+    firstButtonTitle: PropTypes.string,
+    /**
+     * secondButtonTitle button title
+     */
+    secondButtonTitle: PropTypes.string,
+  };
+  
+  Card.defaultProps = {
+    title: 'Card Title',
+    imageUrl: null,
+    description: 'Card Description',
+    firstButtonTitle: 'Learn More',
+    secondButtonTitle:'Share'
+  };

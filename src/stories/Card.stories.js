@@ -1,8 +1,18 @@
+import React from 'react'
 import { Card } from '../components/Card/index.jsx'
 
 export default {
     component: Card,
-    tags: ['autodocs']
+    tags: ['autodocs'],
+    decorators: [
+        (Story) => (
+          <div style={{ margin: '3em',display:'flex'}}>
+            {/* 👇 Decorators in Storybook also accept a function. Replace <Story/> with Story() to enable it  */}
+            <Story />
+            <Story />
+          </div>
+        ),
+      ],
 }
 
 export const CardComponent = {

@@ -1,26 +1,64 @@
 /* Button.module.css */
 .button {
     /* Shared styles for both primary and secondary buttons */
-    padding: 10px 20px;
-    font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.primaryButton {
+.small {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.medium {
+    padding: 12px 18px;
+    font-size: 16px;
+}
+
+.large {
+    padding: 16px 24px;
+    font-size: 18px;
+}
+
+.primary {
     /* Styles specific to the primary button */
-    background-color: #3498db;
+    background-color: #007bff;
     color: #ffffff;
 }
 
-.secondaryButton {
+.secondary {
     /* Styles specific to the secondary button */
-    background-color: #2ecc71;
+    background-color: #6c757d;
     color: #ffffff;
+}
+
+.success{
+    background-color: #28a745; 
+    color: #ffffff
+}
+
+.danger{
+    background-color: #dc3545;
+    color: #ffffff
 }
 
 .transparent {
     background-color: transparent;
     color: inherit;
+}
+
+.small {
+    padding: '8px 12px';
+    font-size: '14px';
+}
+
+.medium {
+    padding: '12px 18px';
+    font-size: '16px';
+}
+
+.large {
+    padding: '16px 24px';
+    font-size: '18px';
 }
