@@ -15,6 +15,8 @@ export const errorHeader = {
     args: {
         title: 'StoryBook',
         headerBgColor: 'error',
+        onHomeButtonClick: () => alert("Home Button click"),
+        onSignupButtonClick: () => alert("Signup Button click")
     }
 }
 
@@ -22,5 +24,7 @@ export const transparentHeader = {
     args: {
         title: 'StoryBook',
         headerBgColor: 'transparent',
+        onHomeButtonClick: () => alert("Home Button click"),
+        onSignupButtonClick: () => alert("Signup Button click")
     }
 }

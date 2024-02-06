@@ -23,7 +23,7 @@
 .cardTitle {
     /* Title styles */
     margin: 0;
-    fontSize: 18px;
+    font-size: 18px;
 }
 
 .cardDescription {

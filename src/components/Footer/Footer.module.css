@@ -1,0 +1,49 @@
+/* Footer.css */
+
+.footerContainer {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialLinks {
+    margin-top: 10px;
+}
+
+.socialLinks a {
+    color: inherit;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+.primary {
+    /* Styles specific to the primary button */
+    background-color: #3498db;
+    color: rgb(255, 255, 255)
+}
+
+.secondary {
+    /* Styles specific to the secondary button */
+    background-color: #333;
+    color: #fff;
+}
+
+.error {
+    background-color: rgb(211, 47, 47);
+    color: rgb(255, 255, 255)
+}
+
+.transparent {
+    background-color: transparent;
+    color: #000
+}
+
+.warning {
+    background-color: rgb(237, 108, 2)
+}

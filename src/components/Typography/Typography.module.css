@@ -1,0 +1,25 @@
+/* Typography.css */
+
+.typography {
+    /* Common styles for all variants can go here */
+  }
+  
+  .heading {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .subheading {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .body {
+    font-size: 16px;
+  }
+  
+  .caption {
+    font-size: 14px;
+    color: #666; /* Example: Use a subdued color for captions */
+  }
+  

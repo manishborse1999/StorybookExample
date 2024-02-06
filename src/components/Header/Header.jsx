@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { Button } from '../Button/index.jsx';
 
 
-export const Header = ({ title="Storybook Header", headerBgColor="primary" }) => {
+export const Header = ({ title = "Storybook Header", headerBgColor = "primary", onHomeButtonClick, onSignupButtonClick }) => {
     const HeaderBgColor = headerBgColor == "secondary" ? styles.secondary : headerBgColor == "error" ? styles.error : headerBgColor == "transparent" ? styles.transparent : headerBgColor == "warning" ? styles.warning : styles.primary;
 
     return (
@@ -14,8 +14,8 @@ export const Header = ({ title="Storybook Header", headerBgColor="primary" }) =>
                 <h1>{title}</h1>
             </div>
             <div className={styles.buttonContainer}>
-                <Button backgroundColor={'transparent'} style={{marginRight:'10px'}}>Home</Button>
-                <Button backgroundColor={'transparent'}>Sign Up</Button>
+                <Button onClick={onHomeButtonClick} backgroundColor={'transparent'} style={{ marginRight: '10px' }}>Home</Button>
+                <Button onClick={onSignupButtonClick} backgroundColor={'transparent'}>Sign Up</Button>
             </div>
         </header>
     );
@@ -30,9 +30,9 @@ Header.propTypes = {
      * Header background color
      */
     headerBgColor: PropTypes.string,
-  };
-  
-  Header.defaultProps = {
+};
+
+Header.defaultProps = {
     title: 'Storybook Header',
-    headerBgColor:'transparent'
-  };
+    headerBgColor: 'transparent'
+};

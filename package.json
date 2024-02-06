@@ -1,6 +1,6 @@
 {
   "name": "mb-react-component-libarary",
-  "version": "1.0.12",
+  "version": "1.0.18",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-lib": "rollup -c",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_968168ea26cc610"
   },
   "keywords": [],
   "author": "",
@@ -36,8 +37,8 @@
     "storybook": "^7.6.10"
   },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "prop-types": "^15.8.1"
+    "react": ">=17.2.0",
+    "react-dom": ">=17.2.0",
+    "prop-types": ">=15.8.1"
   }
 }
